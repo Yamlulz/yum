@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LED Car Dodge Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>LED CAR DODGE</h1>
+            <div class="score-display">
+                <span>SCORE: <span id="score">0</span></span>
+                <span>SPEED: <span id="speed">1</span></span>
+            </div>
+        </div>
+        
+        <div class="game-board" id="gameBoard">
+            <div class="road">
+                <div class="lane-divider"></div>
+                <div class="lane-divider"></div>
+                <div class="lane-divider"></div>
+            </div>
+            
+            <div class="player-car" id="playerCar">
+                <div class="car-body">
+                    <div class="car-top"></div>
+                    <div class="car-middle"></div>
+                    <div class="car-bottom"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="game-controls">
+            <p>Use ← → arrow keys to move</p>
+            <button id="startBtn">START GAME</button>
+            <button id="pauseBtn" style="display: none;">PAUSE</button>
+        </div>
+        
+        <div class="game-over" id="gameOver" style="display: none;">
+            <h2>GAME OVER</h2>
+            <p>Final Score: <span id="finalScore">0</span></p>
+            <button id="restartBtn">RESTART</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
